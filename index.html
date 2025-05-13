@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BeRecipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #1c1b27;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .btn-buy {
+      background: #00c851;
+      color: #fff;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      background: #fff;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #2c2c2c;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .hero-text .btn-group button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-about {
+      background: #00c851;
+      color: white;
+    }
+
+    .btn-catering {
+      background: #eee;
+      color: #333;
+    }
+
+    .hero-image img {
+      width: 500px;
+      border-radius: 10px;
+    }
+
+    .new-section {
+      padding: 50px 10%;
+    }
+
+    .new-section h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .see-more {
+      color: #00c851;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #1c1b27;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10%;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    .nav-buttons {
+      margin-top: 20px;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      margin: 10px;
+      background: #00c851;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-buttons a:hover {
+      background: #019e45;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ChefDesk</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="add_recipe.html">Add Recipe</a>
+      <a href="search_recipe.php">Search Recipe</a>
+      <a href="remove_recipe.php">Delete Recipe</a>
+    </nav>
+   <button class="btn-buy"onclick="window.location.href='all_recipes.php'">Explore Recipes</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p style="color: green; font-size: 12px; letter-spacing: 1px; font-weight: bold;">WELCOME</p>
+      <h2>Easy Recipes<br>For Any Occasion</h2>
+      <p>Discover delicious and easy-to-make recipes for every part of the day. Store, search, and manage your favorite meals all in one place with BeRecipes.</p>
+      <div class="btn-group">
+        <a href="add_recipe.html"><button class="btn-about">Add a Recipe</button></a>
+        <a href="search_recipe.php"><button class="btn-catering">Find Recipes</button></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="pizza.png" alt="Pizza" />
+    </div>
+  </section>
+
+  <section class="new-section">
+    <h3>What's new on our table</h3>
+    <p>Whether you're craving a hearty breakfast, a quick lunch, or a satisfying dinner, we have recipes tailored for every moment of the day.</p>
+    <p class="see-more">Want to manage your recipes? <a href="add_recipe.html">Add</a>, <a href="search_recipe.html">Search</a>, or <a href="remove_recipe.html">Remove</a> recipes easily.</p>
+  </section>
+
+  <footer>
+    © 2025 ChefDesk | Recipe Management System for Your Daily Meals
+  </footer>
+</body>
+</html>
